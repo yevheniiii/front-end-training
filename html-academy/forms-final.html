@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Испытание: редактирование профиля</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Профиль</h1>
+
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <label for="gender">Ваш пол:
+        <input type="radio" name="gender" id="gender" value="male">Мужской
+        <input type="radio" name="gender" id="gender" value="female"checked>Женский
+      </label>
+      <br>
+      <label for="date">Месяц и год рождения:</label>
+      <br>
+      <select name="days" id="date">
+      	<option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+      </select>
+      <select name="year">
+      	<option value="1990">1990</option>
+        <option value="1991">1991</option>
+        <option value="1992">1992</option>
+        <option value="1993">1993</option>
+        <option value="1994">1994</option>
+        <option value="1995">1995</option>
+      </select>
+      <br>
+      <label for="technologies">Знакомые технологии:</label>
+      <br>
+      <select name="technologies" multiple>
+      	<option value="html">HTML</option>
+      	<option value="css">CSS</option>
+      	<option value="js">JavaScript</option>
+      	<option value="node">Node.js</option>
+      </select>
+      <br>
+      <label for="photo">Фото:</label>
+      <input type="file" name="pic" id="photo">
+      <br>
+      <input type="submit" value="Сохранить">
+    </form>
+  </body>
+</html>
+
