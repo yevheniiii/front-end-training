@@ -1,0 +1,140 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #f8f8f8;
+	font-family: 'Arial', sans-serif;
+}
+h1{
+	font-size: 72px;
+	font-weight: bold;
+	color: #fff;
+}
+h2{
+	font-size: 36px;
+	font-weight: bold;
+	color: #333;
+}
+h3{
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+}
+p{
+	font-size: 18px;
+	font-weight: normal;
+	color: #333;
+}
+#header{
+	background-image: url(../images/header_bg.jpg);
+	height: 799px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	text-align: center;
+}
+#header h1{
+	padding-top: 17%;
+}
+#header h3{
+	margin-top: 14px;
+}
+#header ul{
+	list-style: none;
+	margin-top: 43px;
+}
+#header ul li{
+	display: inline-block;
+	margin: 0 17px;
+
+}
+#header ul li a{
+	display: block;
+	width: 163px;
+	height: 50px;
+	color: transparent;
+}
+.content{
+	margin: 0 auto;
+}
+#content{
+
+}
+.row{
+	padding: 50px 0;
+}
+.left{
+	width: 50%;
+	float: left;
+}
+.right{
+	width: 50%;
+	float: right;
+}
+.row h2{
+	margin-top: 70px;
+	margin-bottom: 22px;
+}
+#footer{
+	background-image: url(../images/footer_bg.jpg);
+	height: 531px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+#footer h2{
+	font-size: 36px;
+	font-weight: normal;
+	color: #fff;
+	float: left;
+	margin-top: 15%;
+	margin-left: 9%;
+}
+#footer ul{
+	float: right;
+	list-style: none;
+	margin-top: 15%;
+	margin-right: 7px;
+}
+#footer ul li{
+	float: left;
+	margin-left: 35px;
+}
+#footer ul li a{
+	display: inline-block;
+	width: 163px;
+	height: 50px;
+	color: transparent;
+}
+.twitter{
+	background-image: url(../images/u85.png);
+}
+.google{
+	background-image: url(../images/u80.png);
+}
+.facebook{
+	background-image: url(../images/u90.png);
+}
+.twitter:hover{
+	background-image: url(../images/u85-r.png);
+}
+.google:hover{
+	background-image: url(../images/u80-r.png);
+}
+.facebook:hover{
+	background-image: url(../images/u90-r.png);
+}
+@media screen and (max-width: 768px) {
+	#header ul li, #footer ul li{
+		margin-top: 5%;
+	}
+	.text{
+		width: 100%;
+	}
+	.img{
+		display: none;
+	}
+}

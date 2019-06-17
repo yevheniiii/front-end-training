@@ -1,0 +1,273 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	height: 100%;
+}
+body{
+	background-color: #fff;
+	background-image: url(../images/bg.png);
+	background-repeat: repeat-x;
+	-webkit-background-size: auto;
+	background-size: auto;
+	font-family: 'Arial', sans-serif;
+	height: 100%;
+}
+h1{
+	font-size: 22px;
+	color: #113848;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+h2{
+	font-size: 20px;
+	color: #404040;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+h3{
+	font-size: 16px;
+	color: #404040;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+p{
+	font-size: 13px;
+	color: #505050;
+	font-weight: normal;
+	line-height: 20px;
+}
+a{
+	font-size: 13px;
+	color: #f67f19;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+#wrap{
+	width: 100%;/*820px*/;
+	margin: 0 auto;
+	min-height: 100%;
+}
+#top{
+	height: 71px;
+	overflow: hidden;
+	line-height: 71px;
+}
+#top img{
+	margin-top: 19px;
+	margin-left: 16%;
+}
+#login{
+	font-size: 11px;
+	font-weight: bold;
+	font-style: italic;
+	color: #777;
+	float: right;
+	margin-right: 16%;
+}
+#login span.marker{
+	color: #fff;
+}
+#login a{
+	color: #f57514;
+	text-decoration: none;
+	font-style: normal;
+	font-size: 12px;
+	background-color: #373737;
+	padding: 9px 43px;
+	margin-left: 22px;
+	border-radius: 2px;
+	box-shadow: 0px 0px 0px 2px #181818,
+	inset 1px 1px 0px 0px #2d2d2d;
+}
+#nav{
+	height: 60px;
+	line-height: 60px;
+	margin-left: 14%;
+}
+#nav ul{
+	list-style: none;
+	overflow: hidden;
+}
+#nav ul li{
+	float: left;
+	margin-left: 26px;
+}
+#nav ul li a{
+	font-size: 75%; /*12px;*/
+	font-weight: bold;
+	color: #fff;
+	padding: 8px 20px;
+}
+#nav ul li a:hover{
+	background-color: #e46000;
+	border-radius: 12px;
+}
+#header{
+	height: 300px;
+	position: relative;
+}
+#header img{
+	position: absolute;
+	margin-left: 15%;
+	bottom: 0px;
+}
+#title{
+	position: absolute;
+	width: 30%; /*400px*/
+	right: 15%;
+	top: 75px;
+}
+#title h1{
+	padding-bottom: 18px;
+	border-bottom: 1px solid #ef8b21;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+#title p{
+	padding-top: 16px;
+	border-top: 1px solid #353535;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	font-size: 87.5%; /*14px*/
+	line-height: 14px;
+	letter-spacing: 0.1px;
+}
+#content{
+	margin-left: 16%;
+	
+}
+.row{
+	overflow: hidden;
+	margin: 40px 0;
+}
+.line{
+	border-top: 1px solid #fbfbfb;
+	border-top: 1px solid #f0f0f0;
+}
+.section1{
+	width: 220px;
+	float: left;
+	margin-right: 80px;
+}
+.section1 h2{
+	background-repeat: no-repeat;
+	padding-left: 60px;
+	height: 44px;
+	margin-bottom: 15px;
+}
+.section1 h2 span{
+	color: #707070;
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+}
+.section1 a{
+	float: right;
+	margin-top: 14px;
+}
+#photography{
+	background-image: url(../images/photography.png);
+}
+#business{
+	background-image: url(../images/business.png);
+}
+#design{
+	background-image: url(../images/designing.png);
+}
+.section2{
+	width: 400px;
+	float: left;
+	margin-right: 20px;
+}
+.section2 h3{
+	margin-bottom: 15px;
+}
+.section2 img{
+	width: 100%;
+}
+#footer{
+	background-color: #191919;
+	height: 68px;
+}
+#footercontent {
+	/*width: 820px;*/
+	margin-left: 16%;
+	line-height: 66px;
+}
+#footer img{
+	vertical-align: middle;
+}
+#footer span{
+	margin-left: 19px;
+}
+#footer ul{
+	list-style: none;
+	float: right;
+	margin-right: 22%;
+}
+#footer ul li{
+	float: left;
+	margin-left: 8px;
+	margin-right: 26px;
+}
+#footer ul li a, #footer span{
+	font-size: 10px;
+	color: #4b4b4b;
+	font-weight: bold;
+}
+#footer ul li a:hover{
+	color: #fff;
+}
+.marnone{
+	margin-right: 0;
+}
+@media screen and (max-width: 1155px)  {
+	#header img {
+		display: none;
+	}
+	#title{
+		margin-left: 15%;
+		top: 15%;
+		width: 265px;
+	}
+	#nav {
+		margin-left: 3px;
+	}
+	#nav ul li {
+		margin-left: 3px;
+	}
+	#nav ul li a {
+		font-size: 0.4em;
+	}
+	#design {
+		margin-top: 15%;
+	}
+	#business {
+		margin-top: 15%;
+	}
+	.about {
+		margin-top: 10%;
+	}
+	.about p {
+		width: 90%;
+	}
+	.section1 {
+		width: 90%;
+	}
+	.section2 {
+		width: 90%;
+	}
+	#footer {
+		height: 100%;
+	}
+	#footercontent img {
+		width: 30%;
+	}
+	#footercontent span {
+		font-size: 0.5em;
+	}
+	#footer ul {
+		display: none;
+	}
+}
