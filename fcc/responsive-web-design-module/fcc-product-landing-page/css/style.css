@@ -1,0 +1,223 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+    height: 100%;
+    width: 100%;
+    background: #eee;
+    font-size: 10px;
+    font-family: Poppins, sans-serif;
+}
+.header{
+    background: url(../images/header-background.jpg) no-repeat scroll center bottom;
+    background-repeat: cover;
+    height: 135%;
+    padding-top: 3rem;
+}
+#sidebar{
+    margin-bottom: 30px;
+}
+#sidebar ul{
+    list-style: none;
+    margin-left: 450px;
+}
+#sidebar ul li{
+    display: inline-block;
+    margin-left: 36px;
+}
+#sidebar ul li a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #8f969d;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+#sidebar ul li a:hover{
+    color: #555;
+}
+#sidebar button{
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 0 35px 0 35px;
+    height: 40px;
+    border-radius: 60px;
+    background: #FF6622;
+    color: #fff;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+#sidebar button:hover{
+    background-color: #333333;
+}
+#sidebar img{
+    position: absolute;
+    left: 80px;
+    top: 25px;
+}
+#main{
+    color: #374048;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+#main h1{
+    font-size: 8rem;
+    margin-top: 5%;
+}
+#main p{
+    color: #8A9095;
+    font-size: 2.7rem;
+    margin: 2% 20%;
+    font-weight: 300;
+    letter-spacing: -0.2px;
+    line-height: 41px;
+}
+#main button{
+    font-size: 2.7rem;
+    font-weight: 500;
+    padding: 0 85px 0 85px;
+    height: 72px;
+    border-radius: 60px;
+    background: #0084ff;
+    color: #fff;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    display: inline-block;
+}
+#main button a{
+    text-decoration: none;
+    color: #fff;
+}
+#main button:hover{
+    background-color: #333333;
+}
+.play-btn{
+    margin: 0 15px;
+    vertical-align: middle;
+}
+.watch{
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 500px;
+    top: 8rem;
+}
+#product{
+    background-color: #fff;
+    text-align: center;
+    height: 950px;
+}
+.product-description{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 32px;
+    padding: 1% 25% 4% 25%;
+    color: #969DA3;
+    text-align: center;
+}
+#product img{
+    padding: 5% 0 0 0;
+}
+#how-it-works{
+    background-color: #F8FBFD;
+    text-align: center;
+}
+#how-it-works > p{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 32px;
+    padding: 1% 27% 0 27%;
+    color: #4E575F;
+}
+#how-it-works div{
+    display: inline-block;
+    width: 25%;
+    padding: 5% 3% 8% 0;
+}
+.arrow::before{
+    content: '';
+    background: url(../images/right-angle.png) no-repeat scroll center 32px;
+    width: 30px;
+    height: 63px;
+    margin-left: -140px;
+    position: absolute;
+    display: inline-block;
+
+}
+.subheading{
+    color: #374048;
+    font-weight: 600;
+    font-size: 2.6rem;
+    padding: 10% 0 2% 0;
+
+}
+.how-paragraph{
+    font-size: 1.6rem;
+    color: #737C85;
+    font-weight: 300;
+    line-height: 28px;
+}
+.header-2{
+    color: #374048;
+    font-size: 4.8rem;
+    font-weight: 600;
+    padding: 75px 0 0 0;
+    word-spacing: 0px;
+    text-align: center;
+}
+#benefits{
+    background: #FFFFFF;
+    padding-bottom: 75px;
+}
+.benefits{
+    display: inline-block;
+    width: 24%;
+    height: 92px;
+    padding: 2% 0 3% 4%;
+}
+.heading-3{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #374048;
+}
+.p-benefits{
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 22px;
+    color: #82898F;
+    height: 66px;
+    padding-top: 1%;
+}
+.first{
+    padding-left: 14%;
+}
+.img-benefits{
+    width: 45px;
+    height: 45px;
+    position: relative;
+    right: 60px;
+    top: 50px;
+}
+#product-features{
+    padding-top: 45px;
+    padding-bottom: 300px;
+}
+.benefits-watch{
+    width: 300px;
+    height: 92px;
+    padding: 45px 0px 3px 15px;
+}
+.content-left{
+    position: relative;
+    display: inline-block;
+    left: 100px;
+}
+.content-right{
+    display: inline-block;
+    position: absolute;
+    left: 888px;
+}
+#product-features img{
+    position: absolute;
+    left: 520px;
+}
