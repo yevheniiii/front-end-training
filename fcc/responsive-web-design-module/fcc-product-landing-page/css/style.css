@@ -402,14 +402,18 @@ html{
 
 .benefits-2 img {
     max-width: 100%;
-    width: 640px;
+    width: 630px;
     height: 366px;
     display: inline-block;
+    object-fit: fill;
+    flex-grow: 1;
 }
 
-.left {
+.up-section,
+.down-section {
     display: inline-block;
     background-color: #fff;
+    display: flex;
 }
 
 .heading-3 {
