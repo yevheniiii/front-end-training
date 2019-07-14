@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="header">
@@ -167,7 +168,7 @@
         </div>
         <img src="images/the-watch.png" alt="">
     </div>
-    <div class="benefits-2">
+    <div id="benefits-2">
         <div class="up-section">
             <div>
                 <img src="images/split-1.jpg" alt="">
@@ -186,72 +187,84 @@
         </div>
     </div>
     <div id="reviews">
-        <h2>REVIEWS</h2>
-        <p>Don’t take our word,. See what our experts says about the watch. We have got over 1000s of positive reviews.</p>
-        <div>
+        <h2 class="header-2">REVIEWS</h2>
+        <p class="product-description">Don’t take our word,. See what our experts says about the watch. We have got over 1000s of positive reviews.</p>
+        <div class="client-review first-client-review">
             <p>The Watch is the nicest smartwatch available, but it's more status symbol than wearable revolutionary. Most of the Watch's features are great.</p>
-            <img src="" alt="">
+            <img src="images/reviewer1.png" alt="quote-img">
         </div>
-        <div>
+        <div class="client-review">
             <p>Watch is the most ambitious, well constructed smartwatch ever seen, but first-gen shortfalls make it feel more like a fashionable toy than a necessary tool.</p>
-            <img src="" alt="">
+            <img src="images/reviewer2.png" alt="quote-img">
         </div>
-        <div>
+        <div class="client-review">
             <p>Watch is the best smartwatch we’ve used, and the first that feels friendly and has character. Watch OS 2.0 adds needed app and Siri abilities.</p>
-            <img src="" alt="">
+            <img src="images/reviewer3.png" alt="quote-img">
         </div>
     </div>
     <div id="faq">
-        <h2>FAQ</h2>
-        <p>Got questions? We’ve got answers. If you have some other questions, feel free to send us an email to hello@product.com</p>
-        <div>
-            <h3>What is Watch? How it works?</h3>
+        <h2 class="header-2">FAQ</h2>
+        <p class="product-description">Got questions? We’ve got answers. If you have some other questions, feel free to send us an email to hello@product.com</p>
+        <div class="faq-answer left">
+            <h3 class="heading-3">What is Watch? How it works?</h3>
             <p>Watch took center stage at this year's Product Show with a preview of watch OS 2. The next generation of Watch software is packed with features that just might turn the device from a nice-to-have into a must-have. If you already own an Apple Watch, you'll have to live with the old software until fall. You’ll love it at the first use.</p>
         </div>
-        <div>
-            <h3>Can I swap out the watch band?</h3>
+        <div class="faq-answer right">
+            <h3 class="heading-3">Can I swap out the watch band?</h3>
             <p>Absolutely. Watch comes with six bands that are easy to mix and match any band with any watch. You can swap them out as your heart desires without the aid of any tools—as long as the band and watch are the same size. (The Leather Loop band, for example, only fits 42mm watches, not the smaller 38mm size.)</p>
         </div>
-        <div>
-            <h3>How the watch is made?</h3>
+        <div class="faq-answer left">
+            <h3 class="heading-3">How the watch is made?</h3>
             <p>Watch has an anodized aluminum case (which is lighter than stainless steel) in silver or space gray, and the face is Ion-X glass, which also designed to be hard and rugged (as well as a little bit lighter) than the sapphire. It’s definitely the lightest of the three Apple Watch editions, making it an ideal exercise companion.</p>
         </div>
-        <div>
-            <h3>So it’s a watch and a fitness tracker?</h3>
+        <div class="faq-answer right">
+            <h3 class="heading-3">So it’s a watch and a fitness tracker?</h3>
             <p>The accelerometer lets the watch count your steps, and it extrapolate distance on its own, or rely on the GPS in the paired Phone to trace your exact route. That step data comes in handy for two of the apps included on the watch: Activity and Workout. Both of the watch’s fitness apps sync data back to the Health and Fitness apps on your Phone.</p>
         </div>
     </div>
     <div id="mobile-stores">
-        <h2>Mobile App for watch</h2>
-        <p>The smartwatch connects to your iPhone and other iOS devices using Bluetooth, alerting you to incoming calls, emails, messages and alerts. Customize your with over 1,000 watchapps found within the smartwatch app.</p>
-        <button></button>
-        <button></button>
+        <div>
+            <img src="images/app-screen.png" alt="">
+        </div>
+        <div>
+            <h2>Mobile App for watch</h2>
+            <p>The smartwatch connects to your iPhone and other iOS devices using Bluetooth, alerting you to incoming calls, emails, messages and alerts. Customize your with over 1,000 watchapps found within the smartwatch app.</p>
+            <a href="#"><img src="images/app-store.png"></a>
+            <a href="#"><img src="images/google-play.png" class="google-play"></a>
+        </div>
     </div>
     <div id="newsletter">
-        <h2>NEWSLETTER</h2>
-        <p>Subscribe to our product newsletter to get notified when we launch the product or when we completed a milestone</p>
-        <form action=""></form>
-        <p>No Spam. We Promise. Unsubscribe anytime.</p>
-    </div>
-    <div id="social">
-        <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-        </ul>
+        <h2 class="header-2">NEWSLETTER</h2>
+        <p class="product-description">Subscribe to our product newsletter to get notified when we launch the product or when we completed a milestone</p>
+        <form action="" class="email-form">
+            <input type="text" name="email" class="input-field" placeholder="Enter Your Email Address">
+            <button type="submit" class="submit-btn">
+                <img src="images/right-angle-white.png" alt="">
+            </button>
+        </form>
+        <p><img src="images/protect.png" alt="protect-icon"> No Spam. We Promise. Unsubscribe anytime.</p>
     </div>
     <div id="footer">
-        <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Terms of Use</a></li>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Mobile App</a></li>
-            <li><a href="">PressKit</a></li>
-        </ul>
-        <p>Copyright © 2016. Proland. All rights reserved</p>
+        <div class="social">
+            <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Terms of Use</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Mobile App</a></li>
+                <li><a href="">PressKit</a></li>
+            </ul>
+            <p>Copyright © 2016. Proland. All rights reserved</p>
+        </div>
     </div>
 </body>
 </html>
