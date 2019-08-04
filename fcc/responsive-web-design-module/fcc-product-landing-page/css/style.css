@@ -9,6 +9,7 @@ html{
     background: #eee;
     font-size: 10px;
     font-family: 'Poppins',sans-serif;
+    /* -webkit-text-size-adjust: none; */
 }
 
 .header{
@@ -647,6 +648,80 @@ html{
     margin-right: .2rem;
 }
 
+#contact {
+    background-color: #f2f5f7;
+    position: relative;
+}
+
+#contact img {
+    /* height: 45rem; */
+    margin: 0 auto;
+    display: block;
+}
+
+.contact-us {
+    z-index: 2;
+    background-color: #fff;
+    padding: 3.8rem 4rem 3.4rem;
+    position: absolute;
+    height: 33.9rem;
+    display: block;
+    width: 46.5rem;
+    top: 21%;
+    right: 33%;
+    bottom: 0;
+}
+
+.contact-us h2 {
+    color: #374048;
+    font-size: 2.7rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+
+.address-details p {
+    display: inline-block;
+}
+
+#contact i {
+    color: #a5aeb3;
+    width: 3rem;
+    line-height: 3.2rem;
+    font-size: 1.7rem;
+}
+
+.sec-row {
+    padding-left: 3.39rem;
+}
+
+.address-details {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #A5AEB3;
+    line-height: 3.2rem;
+    text-decoration: none;
+    font-style: normal;
+}
+
+#contact button {
+    font-weight: 600;
+    font-size: 1.9rem;
+    width: 47.5rem;
+    height: 6.5rem;
+    cursor: pointer;
+    color: #fff;
+    background-color: #0084ff;
+    transition-duration: 0.4s;
+}
+
+#contact .contact-us > div:nth-of-type(2) {
+    padding-bottom: 4rem;
+}
+
+#contact button:hover {
+    background: #333333;
+}
+
 #footer {
     background: #f8fbfd;
 
@@ -659,8 +734,8 @@ html{
 
 .social ul {
     list-style: none;
-    /* margin-left: 45rem; */
     margin: 0 auto;
+    margin-bottom: 3rem;
 }
 
 .social ul li {
@@ -690,4 +765,51 @@ html{
 
 .social ul li a:hover{
     background-color: #374048;
+}
+
+.footer-links {
+    padding: 3.5rem 0;
+    text-align: center;
+}
+
+.footer-links ul {
+    display: table;
+    margin: 0 auto 19px;
+    list-style: none;
+}
+
+.footer-links ul li {
+    display: inline-block;
+}
+
+.footer-links ul li a {
+    color: #99ceff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    font-weight: 300;
+}
+
+.footer-links li+li:before {
+    content: '\2022';
+    padding: 0 13px;
+    line-height: 15px;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    color: #99ceff;
+}
+
+.footer-links p {
+    margin-top: 3rem;
+    color: #c3cbd1;
+    font-size: 1.5rem;
+    line-height: 0.1rem;
+    font-weight: 300;
+}
+
+.line {
+    margin: 0 17rem;
+    height: 0;
+    border: 0;
+    border-top: 1px solid #e9eef2;
 }
