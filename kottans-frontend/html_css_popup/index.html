@@ -1,93 +1,118 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kottans – G-Popup</title>
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kottans Pop-up</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
 </head>
+
 <body>
-    <header class="header">
-        <nav class="navigation">
-            <ul class="nav_menu">
-                <li class="nav_item">
-                    <a href="#" class="nav_link">Email</a>   
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Gmail</a>
                 </li>
-                <li class="nav_item">
-                    <a href="#" class="nav_link">Images</a>
+                <li>
+                    <a href="#">Images</a>
                 </li>
-                <li class="nav_item">
-                    <input type="checkbox"  id="popupCheckBox" class="popup-checkbox"/>
-                    <label for="popupCheckBox" class="popup-label"></label>
-                        <div class="popup" id="popup">
-                            <ul class="popup_area">
-                                <li class="popup__item">
-                                    <a href="#" class="nav_link"><span class="icon popup__icon-account"></span><span class="popup__icon_text">Account</span></a> 
-                                </li> 
-                                <li class="popup__item">
-                                    <a href="#" class="nav_link"><span class="icon popup__icon-search"></span><span class="popup__icon_text">Search</span></a>
-                                </li> 
-                                <li class="popup__item">
-                                    <a href="#" class="nav_link"><span class="icon popup__icon-maps"></span><span class="popup__icon_text">Maps</span></a>
-                                </li>
-                                <li class="popup__item">
-                                    <a href="#" class="nav_link"><span class="icon popup__icon-youtube"></span><span class="popup__icon_text">Youtube</span></a>
-                                </li>
-                                <li class="popup__item">
-                                    <a href="#" class="nav_link"><span class="icon popup__icon-play"></span><span class="popup__icon_text">Play</span></a>
-                                </li>
-                                <li class="popup__item">
-                                    <a href="#" class="nav_link"><span class="icon popup__icon-news"></span><span class="popup__icon_text">News</span></a>
-                                </li>
-                                <li class="popup__item">
-                                    <a href="#" class="nav_link"><span class="icon popup__icon-email"></span><span class="popup__icon_text">Email</span></a>
-                                </li>
-                                <li class="popup__item">
-                                    <a href="#" class="nav_link"><span class="icon popup__icon-contacts"></span><span class="popup__icon_text">Contacts</span></a>
-                                </li>
-                                <li class="popup__item">
-                                    <a href="#" class="nav_link"><span class="icon popup__icon-disk"></span><span class="popup__icon_text">Disk</span></a>
-                                </li>
-                                <li class="popup__item">
-                                    <a href="#" class="nav_link"><span class="icon popup__icon-calendar"></span><span class="popup__icon_text">Calendar</span></a>
-                                </li>
-                                <li class="popup__item">
-                                    <a href="#" class="nav_link"><span class="icon popup__icon-googlePlus"></span><span class="popup__icon_text">Google+</span></a>
-                                </li>
-                                <li class="popup__item">
-                                    <a href="#" class="nav_link"><span class="icon popup__icon-translator"></span><span class="popup__icon_text">Translator</span></a>
-                                </li>
-                            <input type="checkbox" class="popup-checkboxMore" id="popup-checkboxMore"/>
-                            <label for="popup-checkboxMore" class="popup-labelMore">More</label>
-                            <hr class="horisontal-row">
-                                <li class="popup__item hidden">
-                                    <a href="#" class="nav_link"><span class="icon popup__icon-documents"></span><span class="popup__icon_text">Documents</span></a>
-                                </li>
-                                <li class="popup__item hidden">
-                                    <a href="#" class="nav_link"><span class="icon popup__icon-blogger"></span><span class="popup__icon_text">Blogger</span></a>
-                                </li>
-                                <li class="popup__item hidden">
-                                    <a href="#" class="nav_link"><span class="icon popup__icon-hangouts"></span><span class="popup__icon_text">Hangouts</span></a>
-                                </li>
-                                <li class="popup__item hidden">
-                                    <a href="#" class="nav_link"><span class="icon popup__icon-googleKeep"></span><span class="popup__icon_text">Google Keep</span></a>
-                                </li>
-                                <li class="popup__item hidden">
-                                    <a href="#" class="nav_link"><span class="icon popup__icon-jamboard"></span><span class="popup__icon_text">Jamboard</span></a>
-                                </li>
-                                <li class="popup__item hidden">
-                                    <a href="#" class="nav_link"><span class="icon popup__icon-photo"></span><span class="popup__icon_text">Photo</span></a>
-                                </li>
-                            </ul>                        
-                        </div> 
-                        <div class="popup__top"></div>
-                        <div class="popup__arrow"></div>
+                <li>
+                    <a href="#my_popup"><img class="nav-img" src="./images/burger-menu.png" /></a>
+                    <a id="my_popup" href="#" class="popup"></a>
+                    <div class="popup">
+                        <ul class="inside-pop">
+                            <li>
+                                <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img"
+                                            src="./images/drive.png" />Drive</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img"
+                                            src="./images/translator.jpg" />Translator</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img"
+                                            src="./images/yahoo.png" />Yahoo</a>
+                                </div>
+                            </li>
+                            <li class="sec-row-inside">
+                                <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img"
+                                            src="./images/yahmail.png" />Yahmail</a>
+                                </div>
+                            </li>
+                            <li class="sec-row-inside">
+                                <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img"
+                                            src="./images/plus.png" />Plus</a>
+                                </div>
+                            </li>
+                            <li class="sec-row-inside">
+                                <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img"
+                                            src="./images/music.png" />Music</a>
+                                </div>
+                            </li>
+                            <li class="third-row-inside">
+                                <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img"
+                                            src="./images/business.png" />Business</a>
+                                </div>
+                            </li>
+                            <li class="third-row-inside">
+                                <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img"
+                                            src="./images/calendar.png" />Calendar</a>
+                                </div>
+                            </li>
+                            <li class="third-row-inside">
+                                <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img"
+                                            src="./images/excel.png" />Excel</a>
+                                </div>
+                            </li>
+                            <li class="fourth-row-inside">
+                                <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img"
+                                            src="./images/plus.png" />Plus</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="more-container">
+                            <a href="#" class="more">More</a>
+                        </div>
+                        <!-- hidden pop-up items -->
+                        <ul>
+                            <li class="more-target">
+                                <div><a href="#"><img src="./images/plus.png" alt="plus-service" />Plus</a></div>
+                            </li>
+                            <li class="more-target">
+                                <div><a href="#"><img src="./images/plus.png" alt="plus-service" />Plus</a></div>
+                            </li>
+                            <li class="more-target">
+                                <div><a href="#"><img src="./images/plus.png" alt="plus-service" />Plus</a></div>
+                            </li>
+                            <li class="more-target">
+                                <div><a href="#"><img src="./images/plus.png" alt="plus-service" />Plus</a></div>
+                            </li>
+                            <li class="more-target">
+                                <div><a href="#"><img src="./images/plus.png" alt="plus-service" />Plus</a></div>
+                            </li>
+                            <li class="more-target">
+                                <div><a href="#"><img src="./images/plus.png" alt="plus-service" />Plus</a></div>
+                            </li>
+                            <li class="more-target">
+                                <div><a href="#"><img src="./images/plus.png" alt="plus-service" />Plus</a></div>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
-                <li class="nav_item">
-                    <a href="#" class="account nav_link" ></a>   
-                </li>        
+                <!-- End of burger menu -->
+                <li>
+                    <a href="#"><img class="nav-img" src="./images/bell.png" /></a>
+                </li>
+                <li>
+                    <a href="#"><img class="nav-img" src="./images/img_avatar.png" /></a>
+                </li>
             </ul>
         </nav>
     </header>
 </body>
+
 </html>
