@@ -31,6 +31,12 @@ ul li a {
     height: 32px;
 }
 
+.popup {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
 a.popup:target {
     display: block;
 }
@@ -39,6 +45,7 @@ a.popup:target {
 a.popup:target + div.popup {
     display: flex;
     flex-wrap: wrap;
+    height: 35rem;
 }
 
 /* popup target anchor and background */
@@ -143,10 +150,29 @@ div.popup {
     transition: 0.25s ease;
 }
 
+.read-more-ul {
+    /* display: flex; */
+    /* flex-direction: row; */
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* background-color: black; */
+}
+
+.read-more-target li {
+    flex: 0 0 23.333333%;
+}
+
+.read-more-target img {
+    width: 50px;
+    height: 50px;
+}
+
 .read-more-state:checked ~ .read-more-wrap .read-more-target {
     opacity: 1;
     font-size: inherit;
-    max-height: 999em;
+    max-height: 100%;
+    flex: 0 0 23.333333%;
 }
 
 .read-more-state ~ .read-more-trigger:before {
