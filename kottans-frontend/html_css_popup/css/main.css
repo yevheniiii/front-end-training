@@ -151,8 +151,8 @@ div.popup {
 }
 
 .read-more-ul {
-    /* display: flex; */
-    /* flex-direction: row; */
+    display: flex;
+    flex-direction: row;
     padding: 0;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -176,11 +176,11 @@ div.popup {
 }
 
 .read-more-state ~ .read-more-trigger:before {
-    content: "Show more";
+    content: "More";
 }
 
 .read-more-state:checked ~ .read-more-trigger:before {
-    content: "Show less";
+    content: "Less";
 }
 
 .read-more-trigger {
