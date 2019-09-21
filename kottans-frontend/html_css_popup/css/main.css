@@ -1,191 +1,193 @@
-nav {
-    display: flex;
-    justify-content: flex-end;
+body {
+    font-size: 16px;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 16px;
 }
 
-ul {
-    display: flex;
-    list-style: none;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-ul li {
-    margin-left: 2%;
-}
-
-ul li a {
-    text-decoration: none;
-    color: #000;
-    display: flex;
-}
-
-.nav-img {
-    width: 32px;
-    height: 32px;
-}
-
-.popup {
-    height: 100%;
-    overflow: auto;
-    box-shadow:2px 3px 5px #999;
-}
-
-a.popup:target {
+.nav {
     display: block;
+    height: auto;
 }
 
-.inside-pop {
+.menu {
+    margin-right: 20px;
     display: flex;
     flex-direction: row;
-    padding: 6px 6px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-/* showing popup */
-a.popup:target + div.popup {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    height: 400px;
-    overflow: auto;
-}
-
-.pop-img {
-    width: 50px;
-    height: 50px;
-}
-
-/* popup target anchor and background */
-a.popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    /* height: 100%; */
-    /* background: rgba(0, 0, 0, 0.8); */
-    cursor: default;
-}
-
-/* popup window */
-div.popup {
-    /* popup window is initially hidden */
-    display: none;
-    background: white;
-    width: 35%;
-    height: auto;
-    position: fixed;
-    top: 10%;
-    left: 60%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-
-
-.inside-pop li {
-    flex: 0 0 23.333333%;
-}
-
-.inside-a {
-    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
 }
 
-.sec-row-inside,
-.third-row-inside,
-.fourth-row-inside {
-    margin-top: 5%;
+.menuItem {
+    display: flex;
+    list-style-type: none;
+    margin-left: 20px;
 }
 
-.more-container {
-    flex: 1;
-    background-color: #f4f4f4;
-    padding: 3% 0;
+.menu img,
+.button {
+    width: 24px;
+    height: 24px;
 }
 
-.hidden-popup{
-    padding: 6px 6px;
-    height: auto;
-    overflow: auto;
+.ava {
+    width: 36px;
+    height: 36px;
 }
 
-.more {
-    justify-content: center;
-}
-
-
-
-/* .inside-focus:focus {
-    outline: 1px solid blue;
-    background-color: yellow;
-} */
-.inside-focus:hover {
-    outline: #c9b7b7 solid 2px;
-}
-
-.inside-focus:focus {
-    background-color: yellow;
-  }
-
-/* div.popup > a.close {
-    color: white;
+.triangle {
+    display: none;
     position: absolute;
-    font-weight: bold;
-    right: 10px;
-} */
-
-.more-target {
-    opacity: 0;
-    max-height: 0;
-    font-size: 0;
-    transition: 0.25s ease;
+    top: 55px;
+    right: 116px;
+    width: 0;
+    height: 0;
+    z-index: 2;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #d4d4d4;
 }
 
-.read-more-state {
+.empty {
+    position: absolute;
+    top: 2px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+}
+
+.popUp,
+.MoreApps {
+    position: absolute;
+    overflow-y: auto;
+    clip: rect(0 0 0 0);
+}
+
+.button {
+    margin-left: 20px;
+    background-image: url(../images/burger-menu.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.menuItem:hover,
+.button:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+.iconsContainer {
+    display: none;
+    position: absolute;
+    width: 280px;
+    height: 362px;
+    top: 66px;
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+}
+
+.popupIcons,
+.hiddenBlock {
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.popupIconsItem,
+.hidden {
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 5px 0 5px;
+}
+
+
+.popupIconsItem a:hover {
+    outline: 1px solid #a1a1a1;
+}
+
+.space:hover {
+    outline: none;
+}
+
+.popupIcons a,
+.hiddenBlock a {
+    text-decoration: none;
+    color: #111;
+    padding: 2px;
+    width: 100%;
+    height: 100%;
+}
+
+.popupIconsItem a:focus {
+    outline: 1px solid #3f56fb;
+}
+
+.popupIconsItem img,
+.hiddenBlock img {
+    display: block;
+    width: 48px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.captions {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.popUp:checked~.iconsContainer {
+    display: block;
+}
+
+.popUp:checked~.triangle {
+    display: block;
+}
+
+.MorePopUp {
+    display: block;
+    margin-top: 10px;
+    margin-left: 0;
+    line-height: 35px;
+    text-align: center;
+    width: 280px;
+    background-color: #eee;
+    font-size: 16px;
+}
+
+.hiddenBlock,
+.line {
     display: none;
 }
 
-.read-more-target {
-    opacity: 0;
-    max-height: 0;
-    font-size: 0;
-    display: block;
-    transition: 0.25s ease;
+.line {
+    color: #eee;
+    width: 200px;
+    margin-left: 40px;
+    opacity: 0.5;
 }
 
-.read-more-state:checked ~ .read-more-wrap .read-more-target {
-    opacity: 1;
-    font-size: inherit;
-    /* display: block; */
-    margin-left: 10px;
-    max-height: 999em;
+.MoreApps:checked~.MorePopUp {
+    display: none;
 }
 
-.read-more-state ~ .read-more-trigger:before {
-    content: "More";
-}
-
-.read-more-state:checked ~ .read-more-trigger:before {
-    content: "";
-}
-
-.read-more-trigger {
-    cursor: pointer;
+.MoreApps:checked~.line {
     display: inline-block;
-    padding: 0 0.5em;
-    color: #666;
-    position: absolute;
-    left: 45%;
-    bottom: 5%;
-    /* margin-left: 40%; */
-    /* font-size: 0.9em;
-    line-height: 2;
-    border: 1px solid #ddd;
-    border-radius: 0.25em; */
+}
+
+.MoreApps:checked~.hiddenBlock {
+    display: flex;
 }

@@ -1,131 +1,147 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="uk">
 
 <head>
-    <meta charset="UTF-8" />
+    <title>PopUp menu</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Kottans Pop-up</title>
-    <link rel="stylesheet" type="text/css" href="./css/main.css" />
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Gmail</a>
-                </li>
-                <li>
-                    <a href="#">Images</a>
-                </li>
-                <li>
-                    <a href="#my_popup"><img class="nav-img" src="./images/burger-menu.png" /></a>
-                    <a id="my_popup" href="#" class="popup"></a>
-                    <div class="popup">
-                        <ul class="inside-pop">
-                            <li>
-                                <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img"
-                                            src="./images/drive.png" />Drive</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img"
-                                            src="./images/translator.jpg" />Translator</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img"
-                                            src="./images/yahoo.png" />Yahoo</a>
-                                </div>
-                            </li>
-                            <li class="sec-row-inside">
-                                <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img"
-                                            src="./images/yahmail.png" />Yahmail</a>
-                                </div>
-                            </li>
-                            <li class="sec-row-inside">
-                                <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img"
-                                            src="./images/plus.png" />Plus</a>
-                                </div>
-                            </li>
-                            <li class="sec-row-inside">
-                                <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img"
-                                            src="./images/music.png" />Music</a>
-                                </div>
-                            </li>
-                            <li class="third-row-inside">
-                                <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img"
-                                            src="./images/business.png" />Business</a>
-                                </div>
-                            </li>
-                            <li class="third-row-inside">
-                                <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img"
-                                            src="./images/calendar.png" />Calendar</a>
-                                </div>
-                            </li>
-                            <li class="third-row-inside">
-                                <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img"
-                                            src="./images/excel.png" />Excel</a>
-                                </div>
-                            </li>
-                            <li class="fourth-row-inside">
-                                <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img"
-                                            src="./images/plus.png" />Plus</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <!-- <div class="more-container">
+    <nav>
+        <div class="menu">
+            <div class="menuItem" tabindex="1">YaMail</div>
 
-                            <a href="#" class="more">More</a>
-                        </div> -->
-                        <!-- hidden pop-up items -->
-                        <div class="hidden-popup">
-                            <input type="checkbox" class="read-more-state" id="post-2" />
+            <div class="menuItem" tabindex="2">Images</div>
 
-                            <ul class="read-more-wrap read-more-ul inside-pop">
-                                <li class="read-more-target">
-                                    <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img" src="./images/plus.png"
-                                                alt="plus-service" />Plus</a></div>
-                                </li>
-                                <li class="read-more-target">
-                                    <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img" src="./images/plus.png"
-                                                alt="plus-service" />Plus</a></div>
-                                </li>
-                                <li class="read-more-target">
-                                    <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img" src="./images/plus.png"
-                                                alt="plus-service" />Plus</a></div>
-                                </li>
-                                <li class="read-more-target sec-row-inside">
-                                    <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img" src="./images/plus.png"
-                                                alt="plus-service" />Plus</a></div>
-                                </li>
-                                <li class="read-more-target sec-row-inside">
-                                    <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img" src="./images/plus.png"
-                                                alt="plus-service" />Plus</a></div>
-                                </li>
-                                <li class="read-more-target sec-row-inside">
-                                    <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img" src="./images/plus.png"
-                                                alt="plus-service" />Plus</a></div>
-                                </li>
-                                <li class="read-more-target fourth-row-inside">
-                                    <div class="inside-focus"><a href="#" class="inside-a"><img class="pop-img" src="./images/plus.png"
-                                                alt="plus-service" />Plus</a></div>
-                                </li>
-                            </ul>
-                            <label for="post-2" class="read-more-trigger"></label>
-                        </div>
-                    </div>
-                </li>
-                <!-- End of burger menu -->
-                <li>
-                    <a href="#"><img class="nav-img" src="./images/bell.png" /></a>
-                </li>
-                <li>
-                    <a href="#"><img class="nav-img" src="./images/img_avatar.png" /></a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+            <input type="checkbox" id="ButtonPopUp" class="popUp" />
+            <label for="ButtonPopUp" class="button" tabindex="3"></label>
+
+            <div class="iconsContainer">
+                <ul class="popupIcons">
+                    <li class="popupIconsItem" tabindex="6">
+                        <a href="#">
+                            <img src="images/drive.png" alt="drive" />
+                            <div class="captions">Drive</div>
+                        </a>
+                    </li>
+
+                    <li class="popupIconsItem">
+                        <a href="#">
+                            <img src="images/calendar.png" alt="calendar" />
+                            <div class="captions">Calendar</div>
+                        </a>
+                    </li>
+
+                    <li class="popupIconsItem">
+                        <a href="#">
+                            <img src="images/drive.png" alt="drive" />
+                            <div class="captions">Drive</div>
+                        </a>
+                    </li>
+
+                    <li class="popupIconsItem">
+                        <a href="#">
+                            <img src="images/business.png" alt="business" />
+                            <div class="captions">Business</div>
+                        </a>
+                    </li>
+
+                    <li class="popupIconsItem">
+                        <a href="#">
+                            <img src="images/translator.jpg" alt="translator" />
+                            <div class="captions">Translator</div>
+                        </a>
+                    </li>
+
+                    <li class="popupIconsItem">
+                        <a href="#">
+                            <img src="images/music.png" alt="music" />
+                            <div class="captions">GMusic</div>
+                        </a>
+                    </li>
+
+                    <li class="popupIconsItem">
+                        <a href="#">
+                            <img src="images/plus.png" alt="gplus" />
+                            <div class="captions">GPlus</div>
+                        </a>
+                    </li>
+
+                    <li class="popupIconsItem">
+                        <a href="#">
+                            <img src="images/bell.png" alt="bell" />
+                            <div class="captions">Bell</div>
+                        </a>
+                    </li>
+
+                    <li class="popupIconsItem space"></li>
+                </ul>
+
+                <input type="checkbox" id="buttonMore" class="MoreApps" />
+                <label for="buttonMore" class="MorePopUp">More</label>
+
+                <hr class="line" />
+
+                <ul class="hiddenBlock">
+                    <li class="popupIconsItem hidden">
+                        <a href="#">
+                            <img src="images/plus.png" alt="plus" />
+                            <div class="captions">Plus</div>
+                        </a>
+                    </li>
+
+                    <li class="popupIconsItem hidden">
+                        <a href="#">
+                            <img src="images/plus.png" alt="plus" />
+                            <div class="captions">Plus</div>
+                        </a>
+                    </li>
+
+                    <li class="popupIconsItem hidden">
+                        <a href="#">
+                            <img src="images/plus.png" alt="plus" />
+                            <div class="captions">Plus</div>
+                        </a>
+                    </li>
+
+                    <li class="popupIconsItem hidden">
+                        <a href="#">
+                            <img src="images/plus.png" alt="plus" />
+                            <div class="captions">Plus</div>
+                        </a>
+                    </li>
+
+                    <li class="popupIconsItem hidden">
+                        <a href="#">
+                            <img src="images/plus.png" alt="plus" />
+                            <div class="captions">Plus</div>
+                        </a>
+                    </li>
+
+                    <li class="popupIconsItem hidden">
+                        <a href="#">
+                            <img src="images/plus.png" alt="plus" />
+                            <div class="captions">Plus</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menuItem" tabindex="4">
+                <img src="images/bell.png" alt="user-notifications" />
+            </div>
+
+            <div class="menuItem" tabindex="5">
+                <img class="ava" src="images/img_avatar.png" alt="user-avatar" />
+            </div>
+
+            <div class="triangle">
+                <div class="empty"></div>
+            </div>
+        </div>
+    </nav>
 </body>
 
 </html>
