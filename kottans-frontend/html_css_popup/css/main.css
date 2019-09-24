@@ -36,10 +36,10 @@ body {
 
 .pop-up,
 .MoreApps {
-    position: relative;
-    display: none;
-    overflow-y: auto;
-    clip: rect(0 0 0 0);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
 }
 
 .button {
@@ -107,6 +107,7 @@ body {
 
 .inside-item a:hover {
     outline: 1px solid #a1a1a1;
+    cursor: pointer;
 }
 
 .space:hover {
