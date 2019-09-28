@@ -188,6 +188,6 @@ label.MorePopUp:hover {
     display: flex;
 }
 
-img:focus {
-    outline: 2px solid blue;
+.nav-item a:focus, .button:focus {
+    outline: 2px solid brown;
 }
