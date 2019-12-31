@@ -29,3 +29,11 @@ https://github.com/yevheniiii/kottans-frontend/blob/master/task_responsive_web_d
 I was suprised that there are five patterns: mostly fluid, column drop, layout shifter, tiny tweaks, and off canvas.
 
 ## JS Basics
+
+https://github.com/yevheniiii/front-end-training/blob/master/kottans-frontend/task_js_basics/Intro%20to%20JavaScript%20-%20Udacity%202019-10-14%2020-09-24.png
+
+https://github.com/yevheniiii/front-end-training/blob/master/kottans-frontend/task_js_basics/Intro%20to%20JavaScript%20-%20Udacity%202019-10-14%2020-09-53.png
+
+https://github.com/yevheniiii/front-end-training/blob/master/kottans-frontend/task_js_basics/Learn%20%7C%20freeCodeCamp.org%202019-12-31%2015-43-38.png
+
+I liked the section with functional programming and scripting tasks. Some of them were definitely challenging but I managed to solve them.
